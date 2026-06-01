@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sión Network: Acceso</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+        .terminal-text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+            border-right: 2px solid #00ff41;
+            white-space: nowrap;
+            animation: parpadeo 0.8s infinite alternate;
+        }
+        .btn-matrix {
+            background-color: transparent;
+            color: #00ff41;
+            border: 2px solid #00ff41;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 10px #00ff41;
+            transition: all 0.3s ease;
+        }
+        .btn-matrix:hover {
+            background-color: #00ff41;
+            color: #000000;
+            box-shadow: 0 0 25px #00ff41;
+        }
+        @keyframes parpadeo {
+            from { border-color: transparent; }
+            to { border-color: #00ff41; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-text">> INTRODUCE TU NODO EN LA RED...</div>
+    
+    <!-- REEMPLAZA EL '#' CON TU ENLACE DE WA.LINK -->
+    <a href="#" class="btn-matrix">[ INICIAR EXTRACCIÓN ]</a>
+
+</body>
+</html>
