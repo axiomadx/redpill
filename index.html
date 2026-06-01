@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sión Network: Acceso</title>
-    <style>
+   <style>
         body {
             background-color: #000000;
             color: #00ff41;
@@ -15,15 +15,17 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            overflow: hidden;
-            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .terminal-text {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             border-right: 2px solid #00ff41;
-            white-space: nowrap;
+            white-space: normal; /* Permite que el texto baje de renglón si es largo */
+            max-width: 90%; /* Evita que toque las orillas de la pantalla */
+            line-height: 1.5; /* Da un espaciado limpio entre líneas */
             animation: parpadeo 0.8s infinite alternate;
         }
         .btn-matrix {
@@ -38,6 +40,7 @@
             text-decoration: none;
             box-shadow: 0 0 10px #00ff41;
             transition: all 0.3s ease;
+            text-align: center;
         }
         .btn-matrix:hover {
             background-color: #00ff41;
